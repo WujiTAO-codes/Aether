@@ -1,0 +1,8 @@
+venv/
+__pycache__/
+*.pyc
+.env
+
+# Never commit identity/private keys or trust data
+trusted_devices.json
+*.pem
