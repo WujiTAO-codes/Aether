@@ -86,19 +86,17 @@ New devices are clearly labeled as `(new device — first time seen)` the first 
 If a device you've talked to before suddenly shows up with a different underlying identity, Aether will show a clear warning before letting you interact with it, and will ask for explicit confirmation before proceeding. This is a safety mechanism — if you don't recognize why the identity would have changed (e.g. the other person didn't mention reinstalling the app), it's safest to decline and investigate.
 
 ---
-
 ## Project Structure
 
-aether/
-├── main.py              # CLI entry point — the menu you interact with
-├── identity.py          # Manages this device's persistent identity
-├── discovery.py         # Finds other devices on the network
-├── trust.py             # Remembers known devices and flags identity changes
-├── transfer.py          # Handles sending and receiving files
-├── utils.py             # Small shared helper functions
-├── received/            # Where accepted incoming files are saved
-├── requirements.txt     # Python dependencies
-└── trusted_devices.json # Local record of previously-seen devices (not synced/shared)
+- **`main.py`** — CLI entry point, the menu you interact with
+- **`identity.py`** — Manages this device's persistent identity
+- **`discovery.py`** — Finds other devices on the network
+- **`trust.py`** — Remembers known devices and flags identity changes
+- **`transfer.py`** — Handles sending and receiving files
+- **`utils.py`** — Small shared helper functions
+- **`received/`** — Where accepted incoming files are saved
+- **`requirements.txt`** — Python dependencies
+- **`trusted_devices.json`** — Local record of previously-seen devices (not synced/shared)
 
 ---
 
